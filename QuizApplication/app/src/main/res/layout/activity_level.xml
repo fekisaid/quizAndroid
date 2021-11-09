@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="350dp"
+        android:src="@drawable/back_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/selectLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Select Level"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/easy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectLevel"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/round_back_yellow_easy"
+        android:text="Easy"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectLevel" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/intermediate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/easy"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/round_back_orange_intermediate"
+        android:text="Intermediate"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/easy" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/hard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intermediate"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/round_back_red10"
+        android:text="Hard"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intermediate" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hard"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/round_border"
+        android:text="Let's Start!"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hard"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

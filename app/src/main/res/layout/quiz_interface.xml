@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
+
+
+    <ImageView
+        android:id="@+id/quiz_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        app:srcCompat="@drawable/quiz" />
+
+    <TextView
+        android:id="@+id/txt_choose_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quiz_icon"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="Choisissez une catégorie:"
+        android:textColor="#CC000000"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/txt_choose_topic"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:weightSum="2">
+        <LinearLayout
+            android:id="@+id/footballLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/round_back_white_10"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/football_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Football"
+                android:textColor="#CC000000"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/basketballLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/round_back_white_10"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/basketball_icon_removebg_preview"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Basketball"
+                android:textColor="#CC000000"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:weightSum="2"
+
+        >
+        <LinearLayout
+            android:id="@+id/tennisLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/round_back_white_10"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/tennis_racket_icon_7"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Tennis"
+                android:textColor="#CC000000"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/volleyLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/round_back_white_10"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/volleyball_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Volleyball"
+                android:textColor="#CC000000"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/BtnStartQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start quiz"
+        android:layout_below="@+id/layout2"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round_back_green20"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        />
+
+</RelativeLayout>

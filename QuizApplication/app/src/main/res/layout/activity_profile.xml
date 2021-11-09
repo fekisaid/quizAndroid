@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="#FFFFFF">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/colorPrimary"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_person" />
+
+            <TextView
+                android:id="@+id/imgUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/profileImage"
+                android:fontFamily="serif"
+                android:includeFontPadding="false"
+                android:text="Ahmed Sallemi"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-100dp"
+            android:padding="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/quiz_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_history" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/quiz_history_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="serif"
+                        android:includeFontPadding="false"
+                        android:text="123"
+                        android:textColor="#647C90"
+                        android:textSize="20sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/quiz_history_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quiz_history_label"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="serif"
+                        android:includeFontPadding="false"
+                        android:text="Quiz"
+                        android:textColor="#647C90"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/logout_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="35dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_exit" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/logout_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="serif"
+                        android:includeFontPadding="false"
+                        android:paddingTop="25dp"
+                        android:text="logout"
+                        android:textColor="#DD2C00"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/info_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Username"
+                android:textColorHint="#647C90">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EditUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_person24"
+                    android:drawablePadding="10dp"
+                    android:text="AhmedSallemi"
+                    android:textColor="#647C90" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Email"
+                android:textColorHint="#647C90">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EditUserEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:editable="false"
+                    android:text="AhmedSallemi@esprit.tn"
+                    android:textColor="#647C90" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Password"
+                android:textColorHint="#647C90"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EditUserPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:text="123456"
+                    android:textColor="#647C90" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:width="250dp"
+                android:background="@drawable/btn_update_profile"
+                android:text="Update" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        app:itemIconTint="@color/colorPrimary"
+        app:itemTextColor="@color/colorPrimary"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_nav_menu" />
+</RelativeLayout>

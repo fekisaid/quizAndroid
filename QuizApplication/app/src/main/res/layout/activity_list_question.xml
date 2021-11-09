@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListUserActivity"
+    android:background="#FFFFFF"
+    android:paddingTop="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:hint="@string/select_topic"
+            app:hintEnabled="true"
+            app:hintTextColor="@android:color/black"
+            android:background="@drawable/round_border_question"
+            app:boxBackgroundColor="#ffffff"
+            app:startIconTint="#44c6ee"
+            app:endIconTint="#44c6ee"
+            app:shapeAppearanceOverlay = "@style/ShapeAppearanceOverlay.MaterialComponents.TextInputLayout.FilledBox"
+            >
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_question"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16dp"
+                android:paddingBottom="7dp"
+                android:gravity="center"
+                android:hint="@string/select_topic"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:inputType="none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listQuestion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/list_question_element" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

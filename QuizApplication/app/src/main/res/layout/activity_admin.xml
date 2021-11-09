@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity"
+    android:background="#FFEAA4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_exit"
+            android:scaleX="-1"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/admin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Admin Dashboard"
+            android:textColor="#DF03082B"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="440dp"
+        android:layout_height="700dp"
+        android:background="@drawable/backgroundadmin"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+        
+        <RelativeLayout
+            android:id="@+id/userList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="60dp">
+
+            <ImageView
+                android:layout_width="380dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/cv1" />
+            
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/c1"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="30dp"
+                android:text="Users List"
+                android:textColor="#DF03082B"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nbrUsers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="60dp"
+                android:text="Total users: 15"
+                android:textColor="#6003082b"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/addQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+
+            <ImageView
+                android:layout_width="380dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/cv3" />
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/c3"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="35dp"
+                android:text="Add Question"
+                android:textColor="#DF03082B"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/questionList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+
+            <ImageView
+                android:layout_width="380dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/cv2" />
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/c2"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="30dp"
+                android:text="Question List"
+                android:textColor="#DF03082B"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nombreQuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="60dp"
+                android:text="Total question: 15"
+                android:textColor="#6003082b"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
